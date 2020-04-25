@@ -1,0 +1,98 @@
+package com.selenium.handle;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import com.selenium.base.DriverBase;
+import com.selenium.page.loginPage;
+
+public class loginPageHandle {
+	public DriverBase driver;
+	//实例化，声明全局变量
+	public loginPage lp;
+	public loginPageHandle(DriverBase driver) {
+		this.driver = driver;
+		//初始化loginPage
+		lp = new loginPage(driver);
+	}
+	
+	/**
+	 * 点击注册链接
+	 */
+	public void clickLoginToRegister() {
+		lp.click(lp.getLoginToRegisterElement());
+	}
+	
+	/**
+	 * 输入用户名
+	 */
+	public void sendKeysUser(String username) {
+		lp.sendKeys(lp.getUserElement(), username);
+	}
+	
+	/**
+	 * 清空用户名
+	 */
+	public void clearUser() {
+		lp.clear(lp.getUserElement());
+	}
+	
+	/**
+	 * 输入密码
+	 */
+	public void sendKeysPassword(String userpassword) {
+		lp.sendKeys(lp.getPasswordElement(), userpassword);
+	}
+	
+	/**
+	 * 清空密码
+	 */
+	public void clearPassword() {
+		lp.clear(lp.getUserElement());
+	}
+	
+	/**
+	 * 点击登录
+	 */
+	public void clickLoginButton() {
+		lp.click(lp.getLoginButtonElement());
+	}
+	
+	/**
+	 * 点击保持登录
+	 */
+	public void clickKeepLogin() {
+		lp.click(lp.getKeepLoginBoxElement());
+	}
+	
+	/**
+	 * 判断是否是登录页面
+	 * @return 
+	 */
+	public boolean assertLoginPage() {
+		return lp.assertElementIs(lp.getUserElement());
+	}
+	
+	/**
+	 * 判断用户名输入框或密码输入错误页面显示是否正确
+	 * @return
+	 */
+	public void assertDangerDisplay() {
+		if(lp.getAlertdangerElement().getText().equals("用户名或密码错误")) {
+			System.out.println("用户名或密码错误UI显示正确");
+			List<WebElement> eleList = lp.getDangerClassElements();
+			int dangersize = eleList.size();
+			if(dangersize == 2) {
+				System.out.println("用户名和密码页面输入框错误显示UI正确");
+			}else if(dangersize == 1) {
+				System.out.println("用户名或密码输入框错误显示UI正确");
+			}else{
+				System.out.println("检查页面输入框错误显示UI是否正确");
+			}
+		}else {
+			System.out.println("请检查页面错误信息显示");
+		}
+	}
+}

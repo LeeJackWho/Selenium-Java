@@ -1,0 +1,59 @@
+<project basedir="." default="all" name="automation test">
+    <property name="base.dir" value="C:/Users/lc/git/hello"/>
+    <property name="testng.output.dir" value="${base.dir}/test-output"/>
+    <property name="lib.dir" value="${base.dir}/lib"/>
+    <property name="lib.dir" value="${base.dir}/lib"/>
+    <property name="suite.file" value="${base.dir}/testSuits"/>
+    <property name="testng.file" value="*.xml"/>
+ 
+    <taskdef resource="testngtasks" classpath="${lib.dir}/testng.jar"/>
+ 
+    <target name="clean">
+        <delete dir="${base.dir}/bin"/>
+    </target>
+    <target name="compile" depends="clean">
+        <mkdir dir="${base.dir}/bin"/>
+        <javac srcdir="${base.dir}/src" destdir="${base.dir}/bin" classpathref="classes" includeantruntime="off" debug="on" debuglevel="lines,vars,source"/>
+    </target>
+ 
+    <path id="classes">
+        <fileset dir="${lib.dir}" includes="*jar"/>
+        <fileset dir="${lib.dir}" includes="*zip"/>
+        <pathelement location="${base.dir}/bin"/>
+    </path>
+ 
+    <target name="regression" depends="compile">
+        <testng outputdir="${testng.output.dir}" classpathref="classes" delegateCommandSystemProperties="true">
+            <xmlfileset dir="${suite.file}" includes="${testng.file}"/>
+        </testng>
+    </target>
+    
+     <target name="report">
+        <xslt in="${base.dir}/test-output/testng-results.xml" style="${lib.dir}/testng-results.xsl"
+              out="${base.dir}/report/index.html"/>
+             <!-- you need to specify the directory here again -->
+            <param name="testNgXslt.outputDir" expression="${base.dir}/report/" />
+            <classpath refid="test.classpath"/>
+	</target>
+    
+     <!-- 发送邮件 -->
+	<target name="sendmail" description="aa">
+        <mail mailhost="smtp.126.com"  user="${mail_from}" password="${mail_password}" subject="jmeterTest" mailport="25">
+            <from address="${mail_from}" />
+            <to address="${mail_to}" />
+			<!-- 发送附件 -->
+            <fileset dir="${jmeter.result.html.dir}/">
+				<include name="${ReportName}${time}.html"/>
+			</fileset>
+			<message>This email was sent automatically by ANT. &lt; &gt;Please check the automation test report by the link below.  &lt;&gt;If there are any questions, please contact with QA. Thank you! &lt;&gt;&lt; &gt;
+			http://${ComputerName}/${jmeter.result.htmlName}
+			</message>
+        </mail>
+    </target>   
+     <target name="all">  
+        <antcall target="regression" />  
+        <antcall target="report" />  
+<!-- 		<antcall target="sendmail" />   -->
+    </target>  
+    
+</project>

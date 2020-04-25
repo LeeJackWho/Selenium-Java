@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Jenkins项目]" parallel="classes">
+  <test name="JenkinsUITest(failed)" parallel="classes">
+    <parameter name="loginpassword" value="123456"/>
+    <parameter name="loginusername" value="lemon04"/>
+    <classes>
+      <class name="com.bs.Test.RegisterTest">
+        <methods>
+          <include name="test001_register"/>
+        </methods>
+      </class> <!-- com.bs.Test.RegisterTest -->
+      <class name="com.bs.Test.LinkTest">
+        <methods>
+          <include name="linkTest"/>
+        </methods>
+      </class> <!-- com.bs.Test.LinkTest -->
+    </classes>
+  </test> <!-- JenkinsUITest(failed) -->
+</suite> <!-- Failed suite [Jenkins项目] -->

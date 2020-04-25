@@ -1,0 +1,3 @@
+com\lemon\jenkins\RegisterTest.class
+com\lemon\jenkins\DeleteItemTest.class
+com\lemon\jenkins\AddItemTest.class

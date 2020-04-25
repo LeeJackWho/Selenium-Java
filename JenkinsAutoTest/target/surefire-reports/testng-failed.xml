@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.bs.jenkins.RegisterTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.bs.jenkins.RegisterTest">
+        <methods>
+          <include name="jenkins_register"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.bs.jenkins.RegisterTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.bs.jenkins.RegisterTest] -->

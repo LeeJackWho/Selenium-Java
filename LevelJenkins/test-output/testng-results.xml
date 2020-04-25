@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9518" started-at="2020-04-22T09:44:51Z" finished-at="2020-04-22T09:45:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9518" started-at="2020-04-22T09:44:51Z" finished-at="2020-04-22T09:45:01Z">
+      <class name="com.selenium.testCase.loginTest">
+        <test-method status="PASS" signature="getLoinHome()[pri:0, instance:com.selenium.testCase.loginTest@f09733f]" name="getLoinHome" duration-ms="3318" started-at="2020-04-22T17:44:51Z" finished-at="2020-04-22T17:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoinHome -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.selenium.testCase.loginTest@f09733f]" name="testLogin" duration-ms="2235" started-at="2020-04-22T17:44:55Z" depends-on-methods="com.selenium.testCase.loginTest.getLoinHome" finished-at="2020-04-22T17:44:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.selenium.testCase.loginTest@f09733f]" name="quitDriver" duration-ms="3928" started-at="2020-04-22T17:44:57Z" depends-on-methods="com.selenium.testCase.loginTest.testLogin" finished-at="2020-04-22T17:45:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.selenium.testCase.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

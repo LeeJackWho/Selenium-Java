@@ -1,0 +1,8 @@
+# Home Page Objects
+Userbar_login=//*[@id='OSC_Userbar']/a[1]
+Userbar_logout=//div[@id='OSC_Userbar']/a[3]
+
+#Login Page Objects
+Input_name=//*[@id='f_email']
+Input_password=//*[@id='f_pwd']
+Login_button=//*[@id='login_osc']/table/tbody/tr[7]/td/input

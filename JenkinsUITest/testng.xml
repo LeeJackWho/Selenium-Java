@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Jenkins项目" thread-count="1" parallel="classes">
+	<test name="JenkinsUITest" thread-count="1" parallel="classes">
+		<parameter name="loginusername" value="lemon04"></parameter>
+		<parameter name="loginpassword" value="123456"></parameter>
+		<classes>
+			<class name="com.bs.Test.RegisterTest" />
+			<class name="com.bs.Test.RegisterFailTest" />
+			<class name="com.bs.Test.LoginTest" />
+			<class name="com.bs.Test.LoginFailTest" />
+			<class name="com.bs.Test.AddItemTest" />
+			<class name="com.bs.Test.DeleteItemTest" />
+			<class name="com.bs.Test.LinkTest" />
+		</classes>
+	</test>
+</suite>

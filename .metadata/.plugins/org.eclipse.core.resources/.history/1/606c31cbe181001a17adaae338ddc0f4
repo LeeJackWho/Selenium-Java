@@ -1,0 +1,47 @@
+package com.selenium.page;
+
+import org.openqa.selenium.WebElement;
+
+import com.selenium.base.DriverBase;
+import com.selenium.util.getByLocator;
+
+public class registerPage extends BasePage{
+	public registerPage(DriverBase driver) {
+		super(driver);
+	}
+	
+	/**
+	 * 获取注册跳转链接
+	 */
+	public WebElement getLoginToRegisterElement() {
+		return element(getByLocator.getByLocator("registerLink"));
+	}
+	
+	/**
+	 * 获取用户名输入框
+	 */
+	public WebElement getUserElement() {
+		return element(getByLocator.getByLocator("userInput"));
+	}
+	
+	/**
+	 * 获取密码输入框
+	 */
+	public WebElement getPasswordElement() {
+		return element(getByLocator.getByLocator("passwordInput"));
+	}
+	
+	/**
+	 * 获取登录按钮
+	 */
+	public WebElement getLoginButtonElement() {
+		return element(getByLocator.getByLocator("loginButton"));
+	}
+	
+	/**
+	 * 获取单选框
+	 */
+	public WebElement getKeepLoginBoxElement() {
+		return element(getByLocator.getByLocator("keepLoginBox"));
+	}
+}

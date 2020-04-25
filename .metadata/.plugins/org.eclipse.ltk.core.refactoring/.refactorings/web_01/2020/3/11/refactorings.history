@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;libs&apos;&#x0D;&#x0A;- Original project: &apos;web_01&apos;&#x0D;&#x0A;- Destination element: &apos;libs&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     IEDriverServer.exe&#x0D;&#x0A;     chromedriver.exe&#x0D;&#x0A;     geckodriver.exe" description="Copy files" element1="src/test/resources/IEDriverServer.exe" element2="src/test/resources/chromedriver.exe" element3="src/test/resources/geckodriver.exe" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1583815753337" target="/AutoTestMTX2019/libs" units="0" version="1.0"/>
+</session>

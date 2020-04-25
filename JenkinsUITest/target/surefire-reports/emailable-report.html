@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Jenkins项目</th></tr><tr><td><a href="#t0">JenkinsUITest</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">2</td><td class="num">133,967</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Jenkins项目</th></tr></tbody><tbody id="t0"><tr><th colspan="4">JenkinsUITest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.bs.Test.LinkTest</td><td><a href="#m0">linkTest</a></td><td rowspan="1">1585038127653</td><td rowspan="1">16646</td></tr><tr class="failedodd"><td rowspan="1">com.bs.Test.RegisterTest</td><td><a href="#m1">test001_register</a></td><td rowspan="1">1585038014946</td><td rowspan="1">18317</td></tr><tr><th colspan="4">JenkinsUITest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.bs.Test.AddItemTest</td><td><a href="#m2">test</a></td><td rowspan="1">1585038074699</td><td rowspan="1">21570</td></tr><tr class="passedodd"><td rowspan="1">com.bs.Test.DeleteItemTest</td><td><a href="#m3">test</a></td><td rowspan="1">1585038096273</td><td rowspan="1">31376</td></tr><tr class="passedeven"><td rowspan="1">com.bs.Test.LoginFailTest</td><td><a href="#m4">test002_login</a></td><td rowspan="1">1585038070650</td><td rowspan="1">318</td></tr><tr class="passedodd"><td rowspan="1">com.bs.Test.LoginTest</td><td><a href="#m5">test001_login</a></td><td rowspan="1">1585038053323</td><td rowspan="1">3850</td></tr><tr class="passedeven"><td rowspan="3">com.bs.Test.RegisterFailTest</td><td><a href="#m6">test002_registerNull</a></td><td rowspan="1">1585038043185</td><td rowspan="1">242</td></tr><tr class="passedeven"><td><a href="#m7">test003_registerError</a></td><td rowspan="1">1585038144303</td><td rowspan="1">324</td></tr><tr class="passedeven"><td><a href="#m8">test003_registerPasswordStrength</a></td><td rowspan="1">1585038144632</td><td rowspan="1">471</td></tr></tbody></table><h2>JenkinsUITest</h2><h3 id="m0">com.bs.Test.LinkTest#linkTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;请登录&quot;}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;LAPTOP-D5U911R6&apos;, ip: &apos;192.168.246.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}), userDataDir=C:\Users\lijiehao\AppData\Local\Temp\scoped_dir14528_1014705824}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:16926}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
+Session ID: 53983ff7db0ae8f99e849d01bd834ea9
+*** Element info: {Using=link text, value=请登录}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:465)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at com.bs.Test.LinkTest.Link(LinkTest.java:44)
+	at com.bs.Test.LinkTest.linkTest(LinkTest.java:21)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.bs.Test.RegisterTest#test001_register</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.model\-link&quot;}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;LAPTOP-D5U911R6&apos;, ip: &apos;192.168.246.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}), userDataDir=C:\Users\lijiehao\AppData\Local\Temp\scoped_dir17776_856329478}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:16215}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
+Session ID: 50913bacae752b7a06d78153c37158cb
+*** Element info: {Using=class name, value=model-link}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:497)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at com.bs.Test.RegisterTest.register(RegisterTest.java:59)
+	at com.bs.Test.RegisterTest.test001_register(RegisterTest.java:21)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.bs.Test.AddItemTest#test</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.bs.Test.DeleteItemTest#test</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.bs.Test.LoginFailTest#test002_login</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.bs.Test.LoginTest#test001_login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>lemon04</td><td>123456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.bs.Test.RegisterFailTest#test002_registerNull</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.bs.Test.RegisterFailTest#test003_registerError</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.bs.Test.RegisterFailTest#test003_registerPasswordStrength</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

@@ -1,0 +1,72 @@
+package com.selenium.handle;
+
+import com.selenium.base.DriverBase;
+import com.selenium.page.loginPage;
+
+public class loginPageHandle {
+	public DriverBase driver;
+	//实例化，声明全局变量
+	public loginPage lp;
+	public loginPageHandle(DriverBase driver) {
+		this.driver = driver;
+		//初始化loginPage
+		lp = new loginPage(driver);
+	}
+	
+	/**
+	 * 点击注册链接
+	 */
+	public void clickLoginToRegister() {
+		lp.click(lp.getLoginToRegisterElement());
+	}
+	
+	/**
+	 * 输入用户名
+	 */
+	public void sendKeysUser(String username) {
+		lp.sendKeys(lp.getUserElement(), username);
+	}
+	
+	/**
+	 * 清空用户名
+	 */
+	public void clearUser() {
+		lp.clear(lp.getUserElement());
+	}
+	
+	/**
+	 * 输入密码
+	 */
+	public void sendKeysPassword(String userpassword) {
+		lp.sendKeys(lp.getPasswordElement(), userpassword);
+	}
+	
+	/**
+	 * 清空密码
+	 */
+	public void clearPassword() {
+		lp.clear(lp.getUserElement());
+	}
+	
+	/**
+	 * 点击登录
+	 */
+	public void clickLoginButton() {
+		lp.click(lp.getLoginButtonElement());
+	}
+	
+	/**
+	 * 点击保持登录
+	 */
+	public void clickKeepLogin() {
+		lp.click(lp.getKeepLoginBoxElement());
+	}
+	
+	/**
+	 * 判断是否是登录页面
+	 * @return 
+	 */
+	public boolean assertLoginPage() {
+		return lp.assertElementIs(lp.getUserElement());
+	}
+}

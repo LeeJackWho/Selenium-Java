@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Jenkins项目" parallel="false">
+	<test name="用户模块">
+		<classes>
+			<class name="com.bs.jenkins.RegisterTest" />
+			<class name="com.bs.jenkins.AddItemTest" />
+			<class name="com.bs.jenkins.DeleteItemTest" />
+		</classes>
+	</test><!-- Test -->
+</suite><!-- Suite -->

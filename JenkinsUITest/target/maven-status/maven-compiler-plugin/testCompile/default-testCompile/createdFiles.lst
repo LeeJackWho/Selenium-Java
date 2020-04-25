@@ -1,0 +1,7 @@
+com\bs\Test\DeleteItemTest.class
+com\bs\Test\LoginTest.class
+com\bs\Test\AddItemTest.class
+com\bs\Test\LoginFailTest.class
+com\bs\Test\RegisterFailTest.class
+com\bs\Test\LinkTest.class
+com\bs\Test\RegisterTest.class

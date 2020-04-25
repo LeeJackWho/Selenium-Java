@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/testng-6.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/commons-io-2.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/allure-java-commons-2.13.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/allure-model-2.13.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/allure-testng-2.13.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/aspectjweaver-1.8.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/bsh-2.0b6.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/jackson-annotations-2.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/jackson-core-2.9.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/jackson-databind-2.9.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/jcommander-1.72.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/joor-java-8-0.9.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/slf4j-api-1.7.25.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/tika-core-1.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/bson-3.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/commons-codec-1.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/commons-lang3-3.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/commons-logging-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/extentreports-3.1.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/freemarker-2.3.23.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/gson-2.8.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/httpclient-4.5.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/httpcore-4.4.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/httpmime-4.5.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/java-client-7.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/jsoup-1.9.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/mongodb-driver-3.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/软件测试/毕业设计/eclipse-jee-2019-03-R-win32-x86_64/eclipse/eclipse-workspace/AutoTestMTX2019/libs/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

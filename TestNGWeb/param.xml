@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.orp/testng-1.0.dtd">
+<suite name="Depend">
+	<test name="dependtest">
+		<parameter name="driverpath" value="\\src\\test\\resources\\chromedriver.exe"</parameter>
+		<parameter name="url" value="http://localhost:9000/jenkins/login"></parameter>
+		<classes>
+		<!-- testng管理测试用例时，如果有多个测试类，使用xml文件进行管理 -->
+		<class name="com.testing.testng.NewTest"></class>
+		</classes>
+	</test>
+</suite>

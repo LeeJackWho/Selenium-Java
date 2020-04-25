@@ -1,0 +1,22 @@
+package com.selenium.business;
+
+import com.selenium.base.DriverBase;
+import com.selenium.handle.loginPageHandle;
+
+public class loginPro {
+	public loginPageHandle lph;
+	public loginPro(DriverBase driver) {
+		lph = new loginPageHandle(driver);
+	}
+	
+	//成功登录流程
+	public void login(String username,String userpassword) {
+		if(lph.assertLoginPage()) {
+			lph.sendKeysUser(username);
+			lph.sendKeysPassword(userpassword);
+			lph.clickLoginButton();
+		}else {
+			System.out.println("页面不存在或状态不正确");
+		}
+	}
+}
