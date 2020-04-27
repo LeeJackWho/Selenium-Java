@@ -1,0 +1,3 @@
+项目右键run as>Maven build...运行命令：
+1.clean test （收集Allure报表数据）
+2.io.qameta.allure:allure-maven:serve
