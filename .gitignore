@@ -1,0 +1,6 @@
+allure-results/
+test-output/
+*.iml
+.idea/
+target/
+.metadata/

@@ -29,7 +29,7 @@ public class testLogin extends caseBase{
 	@Test(dependsOnMethods= {"getLoginHome"})
 	public void Login() {
 		logger.debug("first time for logging");
-		Lpro.Login("13610056184", "MISSjj28*");
+		Lpro.Login("13800000000", "<TEST_PASSWORD>");
 		
 	}
 	@Test(dependsOnMethods= {"Login"})
